@@ -1,0 +1,17 @@
+{
+  "stocks": [
+    {
+      "symbol": "GOOGL",
+      "stock_quantity": 10
+    },
+    {
+      "symbol": "TSLA",
+      "stock_quantity": 15
+    },
+    {
+      "symbol": "TWTR",
+      "stock_quantity": 9
+    }
+  ]
+}
+
