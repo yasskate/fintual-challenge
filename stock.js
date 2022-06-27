@@ -15,10 +15,6 @@ class Stock extends Api {
       console.error(error)
     }
   }
-
-  getSymbol() {
-    return this.symbol
-  }
 }
 
 export default Stock
