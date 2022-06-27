@@ -1,4 +1,5 @@
 import Api from './api.js'
+import { addDay } from './utils.js'
 
 class Stock extends Api {
   constructor(props) {
@@ -7,7 +8,7 @@ class Stock extends Api {
   }
 
   async price(startDate, endDate) {
-    const url = `time_series?symbol=${this.symbol}&interval=1day&start_date=${startDate}&end_date=${endDate}`
+    const url = `time_series?symbol=${this.symbol}&interval=1day&start_date=${startDate}&end_date=${addDay(endDate)}`
     try {
       const response = await this.request("GET", url)
       return response
